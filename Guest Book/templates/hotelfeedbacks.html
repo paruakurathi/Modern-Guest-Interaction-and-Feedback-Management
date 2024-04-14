@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuestBook</title>
+    <link rel="stylesheet" href="static/CSS/feedback.css"/>
+    
+</head>
+<body>
+    <div >
+        <nav class="navbar">
+            <div class="left">
+                    <h1>GuestBook</h1>
+            </div>
+            <div class="right">
+                <a href="/hotelhome">Logout</a>
+            </div>
+        </nav>
+      </div>
+
+    <center><h2>My Feedbacks</h2></center>
+    <table>
+        <tr>
+            <th>Hotel Name</th>
+            <th>Feedback</th>
+            <th>Result</th>
+        </tr>
+        {% for i in data%}
+        <tr>
+            <td>{{i['hotelname']}}</td>
+            <td>{{i['text']}}</td>
+            <td>{{i['result']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

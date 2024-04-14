@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  body{
+   background-size: cover;
+   background:linear-gradient(to right,rgb(220, 143, 156),#9e9ef1);
+  }
+  .navbar{
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* From https://css.glass */
+  background: rgba(241, 199, 199, 0.11);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.57);
+  }
+  .navbar .left{
+    padding-top: 10px;
+    margin-left: 5rem;
+    color: #f20a0a;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .navbar .right{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    margin-right: 10rem;
+    padding-top: 25px;
+  }
+  .right a{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: text-decoration 0.1s ease-in-out;
+  
+  }
+  .right a:hover {
+    text-decoration:underline 3px rgb(192, 127, 235); 
+  }
+.main_container{
+    width: 38rem;
+    height: 20rem;
+    border-radius: 10px;
+    background-color: rgb(155, 221, 243);
+    margin-top: 10rem;
+    margin-left: 22rem;
+}  
+.main_container a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: rgb(13, 13, 14);
+}

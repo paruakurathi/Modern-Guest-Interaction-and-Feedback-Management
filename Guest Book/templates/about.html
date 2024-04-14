@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=""viewport" content=""device-width,initial-scale=1.0">
+    <style>
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  body{
+   background-size: cover;
+   background:linear-gradient(to right,rgb(220, 143, 156),#9e9ef1);
+  }
+  .navbar{
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* From https://css.glass */
+  background: rgba(241, 199, 199, 0.11);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.57);
+  }
+  .navbar .left{
+    padding-top: 20px;
+    margin-left: 5rem;
+    color: #f20a0a;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .navbar .right{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    margin-right: 10rem;
+    padding-top: 40px;
+  }
+  .right a{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: text-decoration 0.1s ease-in-out;
+  
+  }
+  .right a:hover {
+    text-decoration:underline 3px rgb(9, 232, 248); 
+  }
+
+ .text{
+    font-size: 1.5rem;
+    text-align: start;
+    margin-top: 50px;
+    color:rgb(247, 238, 246);
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+ }
+.inner-container h1{
+  text-align: center;
+  margin-left: 42rem;
+ transform: translateX(-40%); /* Center horizontally */
+    animation: fallAnimation 3s ease forwards; /* Adjust duration as needed */
+}
+
+@keyframes fallAnimation {
+    0% {
+        transform: translate(-30%, -100px); /* Start position */
+        opacity: 0; /* Initial opacity */
+    }
+    100% {
+        transform: translate(-50%, 55%); /* End position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+    </style>
+       
+
+</head>
+<body>
+  <div >
+    <nav class="navbar">
+        <div class="left">
+            <h1>GuestBook</h1>
+        </div>
+        <div class="right">
+            <a href="/guesthome">Home</a>
+
+        </div>
+    </nav>
+  </div>
+    
+    <div class="about-section">
+        <div class="inner-container">
+            <h1 style="text-align: center;font-size: 3rem;
+            margin-top: 20px;color: red;">About</h1>
+            <p class="text">
+                A digital GuestBook is a modern twist on the 
+                traditional guestbook concept, replacing pen and paper 
+                with digital technology. It allows guests to leave their messages,
+                 well-wishes, or comments electronically, typically through a website or
+                  an app. Digital guestbooks offer several advantages over their traditional 
+                  counterparts, such as the ability to reach a wider audience, easy accessibility 
+                  from anywhere with an internet connection, and the option to include multimedia
+                   elements like photos and videos. Additionally, they often provide features like real-time updates, customizable designs, and the ability to easily share entries on social media platforms. Overall, digital guestbooks offer a convenient and interactive way for hosts to capture memories and sentiments from their guests during special events or occasions.
+             </p>
+            <div class="skills">
+            
+</div>
+
+        </div>
+    </div>
+</body>
+</html>

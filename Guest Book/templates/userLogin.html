@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="static/image/userLogin.css"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login</title>
+  <link rel="stylesheet" href="static/CSS/userLogin.css"/>
+</head>
+<body>
+  <div >
+    <nav class="navbar">
+        <div class="left">
+            <h1>GuestBook</h1>
+        </div>
+        <div class="right">
+            <a href="/guesthome">Home</a>
+            <a href="/about">About</a>
+        </div>
+    </nav>
+  </div>
+  <center style="color: white;margin-top: 5px;">{{res}}</center>
+  </div>
+  <div class="login-box">
+    <h2>User Login</h2>
+    <form action="/login" method="post">
+      <div class="user-box">
+        <input type="text" name="username" required>
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+      <input type="submit" value="Login" class="btn">
+    </form>
+    <div  style="color: white;display: flex;">
+      <p class="login">Don't have an account?</p>  <a class="login-a" href="/userreg" >Register</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GuestBook</title>
+  <link rel="stylesheet" href="static/image/guesthome.css"/>
+  <style>
+    html {
+      height: 100%;
+    
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: linear-gradient(to right,#141e30, #243b55);
+    }
+    nav {
+      background-color: linear-gradient(#243b55,#141e30);
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-top: 17px;
+    }
+    nav a:hover {
+      background-color: #03e9f4;
+      color: red;
+    }
+    h2{
+        color: white;
+        margin-left: 30px;
+        margin-right: 800px;
+    }
+    .card {
+      width: 250px;
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(24, 23, 23, 0.5);
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+      color: #fff;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        padding: 50px;
+        
+    }
+
+
+    .card h2 {
+      margin: 0 0 20px;
+      text-align: center;
+    }
+    .card p {
+      margin: 0 0 10px;
+      font-family: sans-serif;
+      word-spacing: 2px;
+      line-height: 1.8;
+    }
+    
+  </style>
+</head>
+<body>
+
+<nav>
+<div style="display: flex;">
+    <h2>GuestBook</h2>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/guesthome">Guest</a>
+    <a href="/hotelhome">Hotel</a>
+</div>
+</nav>
+
+<div class="container">
+  <h2 >Why GuestBook?</h2>
+  <div class="card">
+      <h3>Instant Feedback</h3>
+      <p>Receive feedback from users in real-time, allowing for immediate response and resolution of issues.</p>
+  </div>
+  <div class="card">
+      <h3>Greater Reach</h3>
+      <p>Reach a wider audience by collecting feedback digitally, breaking geographical barriers.</p>
+  </div>
+  <div class="card">
+      <h3>Efficiency</h3>
+      <p>Automate feedback collection and analysis processes, saving time and resources.</p>
+  </div>
+  <div class="card">
+      <h3>Customization</h3>
+      <p>Create tailored feedback forms to gather specific information relevant to your organization.</p>
+  </div>
+  <div class="card">
+      <h3>Analytics</h3>
+      <p>Utilize data analytics tools to gain insights from feedback data, identifying trends and areas for improvement.</p>
+  </div>
+  <div class="card">
+      <h3>Engagement</h3>
+      <p>Engage users through interactive feedback mechanisms, fostering a sense of involvement and ownership.</p>
+  </div>
+</div>
+</body>
+</html>

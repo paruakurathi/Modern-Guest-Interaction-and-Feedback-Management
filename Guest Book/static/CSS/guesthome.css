@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    background:linear-gradient(to right,rgb(220, 143, 156),#9e9ef1);
+ }
+.section1{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 40px #07eed7f9;
+    transform: rotate3d(1, 1, 1,20deg); 
+}
+
+.name{
+    padding-top: 3rem;
+    margin-right: 10rem;
+    font-family:cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5221f1;
+    text-shadow: 0px 0px 2px rgb(243, 8, 8);
+    letter-spacing: 2px;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s ease-in-out infinite alternate;
+    margin-left: 30rem;
+    animation: slideIn 2s ease-out forwards; /* Apply the animation */
+}
+
+.name h3{
+    margin-left: 8rem;
+    color: rgb(121, 14, 221);
+}
+
+.name h1{
+    color: skyblue;
+    font-size: 2rem;
+    font-style: normal;
+    margin-left: 4rem;
+}
+
+
+/* Define the keyframe animation */
+@keyframes slideIn {
+from {
+        transform: translatex(-200%);
+        opacity: 0;
+    }
+    to {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* From https://css.glass */
+background: rgba(241, 199, 199, 0.11);
+border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(255, 255, 255, 0.57);
+}
+.navbar .left{
+    padding-top: 10px;
+    margin-left: 5rem;
+    color: #f20a0a;
+    font-size: 2rem;
+    font-style: italic;
+}
+.navbar .right{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    margin-right: 10rem;
+    padding-top: 30px;
+}
+.right a{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: text-decoration 0.1s ease-in-out;
+  
+}
+.right a:hover {
+    text-decoration:underline 3px rgb(6, 209, 245); 
+}
+
+
+img {
+    position: absolute;
+    top: -30px; /* Initial position above the container */
+    left: 30%; /* Center horizontally */
+    transform: translateX(-40%); /* Center horizontally */
+    animation: fallAnimation 3s ease forwards; /* Adjust duration as needed */
+}
+
+@keyframes fallAnimation {
+    0% {
+        transform: translate(-50%, -100px); /* Start position */
+        opacity: 0; /* Initial opacity */
+    }
+    100% {
+        transform: translate(-50%, 55%); /* End position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.names h3{
+    margin-right: 10rem;
+    
+}
+    

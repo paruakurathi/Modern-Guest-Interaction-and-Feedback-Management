@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Register</title>
+    <link rel="stylesheet" href="static/CSS/hotelregister.css">
+</head>
+<body>
+  <div >
+    <nav class="navbar">
+        <div class="left">
+            <h1>GuestBook</h1>
+        </div>
+        <div class="right">
+            <a href="/hotelhome">Home</a>
+        </div>
+    </nav>
+  </div>
+  <center class="center">{{res}}</center>
+    <div class="login-box">
+        <h2>Hotel Register</h2>
+        <form method="post" action="/hotregister">
+            <div class="user-box">
+                <input type="text" name="username" required>
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="cpassword" required>
+                <label>Confirm Password</label>
+            </div>
+            <center><input type="submit" value="Register" class="btn"></center>
+        </form>
+        <div  style="color: white;display: flex;">
+            <p class="login">Already have an account?</p>  <a class="login-a" href="/hotlog" >Login</a>
+        </div>
+    </div>
+</body>
+</html>
